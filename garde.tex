@@ -1,0 +1,94 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage[top=2.5cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage[dvips]{graphicx}
+\usepackage{pst-all}
+\usepackage{tabulary}
+\usepackage{fancybox}
+\usepackage{multirow}
+\usepackage[francais]{babel}
+\title{garde}
+
+\definecolor{myblue}{rgb}{0,0.22,0.45}
+\definecolor{warningRed}{rgb}{1,0,0}
+\newcommand{\pgpfonttitle}{\sffamily \Huge\selectfont \color{myblue}}
+\newcommand{\pgpfontsubtitle}{\sffamily \Large\selectfont}
+\newcommand{\pgpfontsubsubtitle}{\sffamily \large\selectfont}
+
+% Images
+\newcommand{\ulb}{\includegraphics[width=12cm]{ULB_texte_encoinA.eps}}
+\newcommand{\vincereScintia}{\includegraphics[width=23cm]{vincereCust.eps}}
+\newcommand{\datejour}{November 2015}
+
+% Titremfe
+\newcommand{\mytitleA}{\pgpfonttitle{Social media streaming: Event detection and clustering }}
+% Sous-titre
+\newcommand{\subtitle}{\pgpfontsubtitle{}}
+\newcommand{\subsubtitle}{\pgpfontsubsubtitle{\itshape{LANG-F-301 -- Anglais Scientifique 2}}}
+
+% Mon nom
+\newcommand{\memoireA}{\makebox(83,3)[r]{Loïs\ \textbf{Postula}}}
+\newcommand{\memoireB}{\makebox(83,3)[r]{}}
+\newcommand{\memoireC}{\makebox(83,3)[r]{}}
+% Leurs noms
+\newcommand{\profA}{\makebox(83,3)[l]{Gillian Lucy}}
+\newcommand{\profB}{\makebox(83,3)[l]{}}
+
+% Année aca
+\newcommand{\annee}{\makebox(170,3)[c]{2015 - 2016}}
+% Fac
+\newcommand{\fac}{\makebox(170,3)[c]{Faculty of Science}}
+\newcommand{\dep}{\makebox(170,3)[c]{Department of Computer Science}}
+
+% Pas touche à ça...
+\setlength\extrarowheight{4pt}
+\renewcommand\multirowsetup{\centering}
+\newlength\LL \settowidth\LL{100}
+
+\begin{document}
+\thispagestyle{empty}
+\setlength{\unitlength}{1mm}
+\noindent\begin{picture}(170,252)(3,0) % Surtout pas touche à ça...
+	
+	% Image de fond, à dégager si on aime pas...
+	\put(1,1){\vincereScintia}
+  
+  % Le nom de la super unif ou j'étudie
+  \put(0,172){\ulb}
+  
+  % Ben la date
+  \put(128,241.5){\datejour}
+  
+  % L'année académique
+  \put(0,50){\annee}
+  % Ma super facultée
+  \put(0,60){\fac}
+  % Mon département
+  \put(0,70){\dep}
+  
+  % Mon super titre de mon super travail
+  \put(0,125.5){\makebox(170,6)[c]{\mytitleA}}
+  \put(0,100){\makebox(170,6)[c]{\subtitle}}
+  \put(0,85){\makebox(170,6)[c]{\subsubtitle}}
+
+  % Mon super nom à moi
+  \put(50,21){\makebox(170,6)[c]{\memoireA}}
+  \put(50,16){\makebox(170,6)[c]{\memoireB}}
+  \put(50,11){\makebox(170,6)[c]{\memoireC}}
+  
+  % Les super gens qui m'ont filé ce travail
+  \put(-43,9){\makebox(170,6)[c]{\profA}}
+  \put(-43,4){\makebox(170,6)[c]{\profB}}
+  
+  
+  % Cadrage de travail : à ne pas mettre dans la version finale
+%  \put(0,0){\line(0,1){260}} % ligne de gauche
+%  \put(0,0){\line(1,0){177}} % ligne du bas
+%  \put(177,0){\line(0,1){260}} % ligne de droite
+%  \put(0,260){\line(1,0){177}} % Ligne du haut
+  
+  
+\end{picture}
+\end{document}
