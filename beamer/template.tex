@@ -1,0 +1,50 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+
+\newcommand{\presentationTitle}{Template of presentation}
+\newcommand{\presentationShorttitle}{tmpl}
+\newcommand{\presentationAuthor}{Derpington Mc Derp}
+\newcommand{\presentationProf}{Mr Prof}
+
+
+
+\mode<presentation> {
+\usetheme{Berkeley}
+\usecolortheme{default}
+}
+\title[\presentationShorttitle]{\presentationTitle}
+
+\author{\presentationAuthor} % Your name
+\institute[ULB]
+{
+Université Libre de Bruxelles \\ % Your institution for the title page
+\medskip
+\textit{\presentationProf}
+}
+\date{\today} % Date, can be changed to a custom date
+\logo{\includegraphics[height=16mm]{ulbquadri_mini.eps}} 
+
+\definecolor{beamer@ulbblue}{HTML}{1D4E9E} 
+\setbeamercolor{structure}{fg=beamer@ulbblue}
+\usepackage{tikz}
+\usebackgroundtemplate{%
+\tikz\node[opacity=0.7] {\includegraphics[width=\paperwidth]{vincereCust-eps-converted-to.pdf}};}
+
+
+\AtBeginSection[]{
+   \begin{frame}
+   \tableofcontents[currentsection,hideothersubsections]
+   \end{frame} 
+}
+
+\begin{document}
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+
+\end{document}
